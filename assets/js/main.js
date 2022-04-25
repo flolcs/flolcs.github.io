@@ -23,8 +23,8 @@ toggleCloseMenu.addEventListener("click", () => {
 const sr = ScrollReveal({
   origin: "top",
   distance: "50px",
-  duration: 2000,
-  delay: 400,
+  duration: 1000,
+  delay: 200,
   //reset: true
 });
 
@@ -34,7 +34,7 @@ sr.reveal("h3", { origin: "bottom" });
 sr.reveal(".wwdc", { origin: "left" });
 sr.reveal(".studio_display", { origin: "left" });
 sr.reveal(".apple_fitness", { origin: "left" });
-sr.reveal(".apple_watch", { origin: "right" });
-sr.reveal(".mac_studio", { origin: "right" });
+sr.reveal(".apple_watch", { origin: "bottom" });
+sr.reveal(".mac_studio", { origin: "bottom" });
 sr.reveal(".ipadair", { origin: "top" });
-sr.reveal(".apple_tv", { origin: "right" });
+sr.reveal(".apple_tv", { origin: "bottom" });
