@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Florian Lucas</title>
+  <link rel="shortcut icon" href="./assets/logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+  <header>
+    <div>
+      <i class="ri-disc-fill" id="music-note"></i>
+      <audio id="mySong" src="./assets/music.mp3"></audio>
+    </div>
+    <nav>
+      <i class="ri-menu-line"></i>
+      <i class="ri-close-line"></i>
+      <ul id="menu">
+        <li class="homepage active">
+          <a href="#homepage"><img src="./assets/home.png" id="img-menu" alt="home" /></a>
+        </li>
+        <li class="aboutme">
+          <a href="#aboutme"><img src="./assets/aboutme.png" id="img-menu" alt="about me" /></a>
+        </li>
+        <li class="skills">
+          <a href="#skills"><img src="./assets/skills.png" id="img-menu" alt="skills" /></a>
+        </li>
+        <li class="portfolio">
+          <a href="#portfolio"><img src="./assets/portfolio.png" id="img-menu" alt="portfolio" /></a>
+        </li>
+        <li class="contact">
+          <a href="#contact"><img src="./assets/contact.png" id="img-menu" alt="contact" /></a>
+        </li>
+      </ul>
+      <ul id="sous-menu">
+        <li class="homepage active liSousMenu">
+          <a href="#homepage">Home</a>
+        </li>
+        <li class="aboutme liSousMenu">
+          <a href="#aboutme">About</a>
+        </li>
+        <li class="skills liSousMenu">
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="portfolio liSousMenu">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li class="contact liSousMenu">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="homepage">
+      <h1>Florian LUCAS</h1>
+      <h2></h2>
+      <a id="downloadcv" href="./downloads/cvlucasflorian.pdf" download="cvlucasflorian">Télécharger mon CV</a>
+      <img id="wave-home" src="./assets/wave.png" alt="wave" />
+    </section>
+  </header>
+  <main>
+    <section id="aboutme">
+      <img id="wave-aboutme" src="./assets/wave-aboutme.png" alt="wave" />
+      <h3 class="titre_aboutme">A propos</h3>
+      <div class="aboutme-description">
+        <p class="text-aboutme">Passioné d'informatique</p>
+        <p class="text-aboutme">
+          Référent numérique et administrateur réseau dans un établissement
+          public
+        </p>
+        <p class="text-aboutme">Développeur web front-end</p>
+      </div>
+    </section>
+    <section id="skills">
+      <h3 class="titre_competences">Compétences</h3>
+      <img id="wave-skills" src="./assets/wave-skills.png" alt="wave" />
+      <div class="skills-description">
+        <div class="skills-dev">
+          <div id="skills-html">
+            <h4>HTML</h4>
+            <div class="containerSkills">
+              <div  class="sousContainerSkills" id="sous-container1"></div>
+            </div>
+          </div>
+          <div id="skills-css">
+            <h4>CSS</h4>
+            <div class="containerSkills">
+              <div  class="sousContainerSkills" id="sous-container2"></div>
+            </div>
+          </div>
+          <div id="skills-js">
+            <h4>Javascript</h4>
+            <div class="containerSkills">
+              <div  class="sousContainerSkills" id="sous-container3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-outils">
+          <div class="skills-outils-container frontend">
+            <span class="titre_skills">Frontend</span>
+            <i class="iconSkills bi bi-filetype-html"></i>
+            <i class="iconSkills bi bi-filetype-css"></i>
+            <i class="iconSkills bi bi-filetype-js"></i>
+            <i class="iconSkills ri-reactjs-fill"></i>
+          </div>
+          <div class="skills-outils-container tools">
+            <span class="titre_skills">Tools</span>
+            <i class="iconSkills bi bi-git"></i>
+            <i class="iconSkills bi bi-github"></i>
+            <i class="iconSkills bi bi-terminal-fill"></i>
+            <img class="iconSkills" src="./assets/vscode.png" alt="vscode" />
+          </div>
+          <div class="skills-outils-container others">
+            <span class="titre_skills">Others</span>
+            <i class="iconSkills bi bi-bootstrap-fill"></i>
+            <i class="iconSkills ri-npmjs-fill"></i>
+            <img class="iconSkills" src="./assets/figma.png" alt="figma" />
+            <img class="iconSkills" src="./assets/photopea.png" alt="photopea" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio">
+      <h3 id="titre-portfolio">Portfolio</h3>
+      <img id="wave-portfolio" src="./assets/wave-portfolio.png" alt="wave" />
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <span id="titre-projet">Elecar</span>
+            <img id="image-projet" src="./assets/elecar.png" alt="elecar" />
+            <div id="projet-link">
+              <a href="https://github.com/flolcs/elecar"><i id="github-portfolio" class="bi bi-github"></i></a>
+              <a href=""><i id="website-portfolio" class="bi bi-code-slash"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide" id="projet-container">
+            <span id="titre-projet">Dashboard</span>
+            <img id="image-projet" src="./assets/dashboard.png" alt="dashboard" />
+            <div id="projet-link">
+              <a href="https://github.com/flolcs/dashboard"><i id="github-portfolio" class="bi bi-github"></i></a>
+              <a href=""><i id="website-portfolio" class="bi bi-code-slash"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide" id="projet-container">
+            <span id="titre-projet">GPT-3</span>
+            <img id="image-projet" src="./assets/gtp3.png" alt="gpt3" />
+            <div id="projet-link">
+              <a href="https://github.com/flolcs/gpt3"><i id="github-portfolio" class="bi bi-github"></i></a>
+              <a href=""><i id="website-portfolio" class="bi bi-code-slash"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide" id="projet-container">
+            <span id="titre-projet">Coffee</span>
+            <img id="image-projet" src="./assets/coffee.png" alt="coffee" />
+            <div id="projet-link">
+              <a href="https://github.com/flolcs/coffee"><i id="github-portfolio" class="bi bi-github"></i></a>
+              <a href=""><i id="website-portfolio" class="bi bi-code-slash"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide" id="projet-container">
+            <span id="titre-projet">Architects</span>
+            <img id="image-projet" src="./assets/architects.png" alt="architects"/>
+            <div id="projet-link">
+              <a href="https://github.com/flolcs/architects"><i id="github-portfolio" class="bi bi-github"></i></a>
+              <a href=""><i id="website-portfolio" class="bi bi-code-slash"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <img id="wave-contact" src="./assets/wave-contact.png" alt="wave" />
+      <h3 id="titre-contact">Contact</h3>
+      <div id="contact-description">
+        <form>
+          <div id="form-description">
+            <input id="name" type="text" placeholder="Nom" />
+            <input id="email" type="email" placeholder="Email" />
+            <input id="objet" type="text" placeholder="Objet" />
+            <textarea name="textemessage" id="textemessage" placeholder="Ecrivez votre message"></textarea>
+            <input type="submit" id="submit" value="Envoyer" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="basdepage">
+      <a id="downloadcredits" href="./downloads/credits.txt" download="credits">Credits</a>
+      <span id="span-footer">Florian Lucas © 2022. Tous droits réservés.</span>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
