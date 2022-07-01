@@ -250,7 +250,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     width: 100vw;
-    height: 80vh;
+    height: 170vh;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -262,6 +262,13 @@ footer {
   }
   a {
     display: none;
+  }
+  footer {
+    bottom: none;
+    top: 180vh;
+  }
+  .droite {
+    margin-top: 75px;
   }
 }
 
