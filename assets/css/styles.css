@@ -183,7 +183,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-top: 5vh;
+  margin-top: 75px;
 }
 
 #img-dev {
@@ -222,6 +222,26 @@ h2 {
 }
 
 /*=============== MAIN ===============*/
+main {
+  margin-top: 10vh;
+}
+/*=============== ABOUT ME ===============*/
+h3 {
+  font-family: "font-3";
+  font-size: 26px;
+  color: var(--color6)
+}
+
+b {
+  color: var(--color6);
+}
+
+.main-aboutme {
+  margin-top: 20px;
+}
+
+
+
 
 /*=============== FOOTER ===============*/
 
@@ -275,6 +295,10 @@ h2 {
   h2 {
     font-size: 32px;
   }
+  #img-dev {
+    max-height: 500px;
+    max-width: 500px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -301,5 +325,11 @@ h2 {
   }
   h2 {
     font-size: 38px;
+  }
+  p {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 32px;
   }
 }
