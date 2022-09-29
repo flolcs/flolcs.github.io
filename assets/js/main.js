@@ -41,12 +41,6 @@ const typedh2 = new Typed("h2", {
   smartBackspace: true,
 });
 
-// LOCOMOTIVE SCROLL
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("[data-scroll-container]"),
-  smooth: true,
-});
-
 // SWIPER JS
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1.5,
@@ -89,3 +83,26 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+// SCROLL REVEAL
+// ScrollReveal
+const sr = ScrollReveal({
+  distance: "75px",
+  duration: 1000,
+  delay: 100,
+  viewFactor: 0,
+});
+
+sr.reveal("#img-dev", { delay: 200, origin: "bottom" });
+
+sr.reveal("#name", { delay: 0, origin: "left" });
+sr.reveal("#email", { delay: 50, origin: "left" });
+sr.reveal("#objet", { delay: 100, origin: "left" });
+sr.reveal("#text-message", { delay: 150, origin: "left" });
+
+sr.reveal(".soft1", { delay: 0, origin: "right" });
+sr.reveal(".soft2", { delay: 0, origin: "left" });
+sr.reveal(".soft3", { delay: 0, origin: "right" });
+sr.reveal(".soft4", { delay: 0, origin: "left" });
+sr.reveal(".soft5", { delay: 0, origin: "right" });
+sr.reveal(".soft6", { delay: 0, origin: "left" });

@@ -26,7 +26,7 @@
   --color3: #2285D1;
   --color4: #26AD54;
   --color5: #C33B2B;
-  --color6: #CA9D0C;
+  --color6: #807EED;
 }
 
 /*=============== BASE ===============*/
@@ -88,6 +88,7 @@ nav {
   width: 40px;
   font-size: 24px;
   cursor: pointer;
+  position: relative;
 }
 
 .ri-close-line {
@@ -216,8 +217,21 @@ h2 {
 }
 
 .bot-header a:nth-child(1) {
-  color: var(--color6);
+  color: var(--color3);
   font-size: 24px;
+  animation: animArrow 2s infinite;
+}
+
+@keyframes animArrow {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
 }
 
 /*=============== MAIN ===============*/
@@ -320,7 +334,7 @@ b {
   height: 100%;
   width: 100%;
   border-radius: 10px;
-  filter: grayscale(75%);
+  filter: grayscale(50%);
 }
 
 .swiper-slide:hover .img-portfolio {
@@ -333,6 +347,7 @@ b {
   height: 250px;
   background-color: var(--color2);
   border-radius: 10px;
+  cursor: grab;
 }
 
 .titre-projet {
@@ -344,6 +359,7 @@ b {
   font-family: "font-1";
   color: var(--color4);
   visibility: hidden;
+  text-align: center;
 }
 
 .swiper-slide:hover .titre-projet {
@@ -468,7 +484,7 @@ form {
   padding-bottom: 10px;
 }
 
-#submit {
+.submit {
   border: none;
   background-color: var(--color5);
   height: 40px;
@@ -478,9 +494,15 @@ form {
   font-family: "font-1";
   font-size: 20px;
   cursor: pointer;
-  position: relative;
-  z-index: 10;
 }
+
+.submit:hover {
+  letter-spacing: 2px;
+  transition: .5s;
+}
+
+
+
 
 .link-contact {
   display: flex;
