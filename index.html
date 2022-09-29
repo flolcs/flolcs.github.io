@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Florian Lucas</title>
     <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/locomotive-scroll.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
-<body>
+<body data-scroll-container data-scroll-section="">
     <header id="home">
         <section class="top-header">
             <nav>
@@ -80,6 +81,20 @@
                 <img src="./assets/img/figma.png" id="img-figma" class="img-skills" alt="">
                 <img src="./assets/img/adobe.png" class="img-skills" alt="">
             </div>
+            <div class="soft-skills">
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3"
+                    class="soft-skill">Organisé</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-6"
+                    class="soft-skill">Rigoureux</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="5"
+                    class="soft-skill">Adaptable</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2"
+                    class="soft-skill">Autonome</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="3"
+                    class="soft-skill">Pédagogue</span>
+                <span data-scroll data-scroll-direction="horizontal" data-scroll-speed="7" class="soft-skill">Travail
+                    en équipe</span>
+            </div>
         </section>
         <section id="portfolio"></section>
         <section id="contact"></section>
@@ -87,6 +102,7 @@
     <footer>
 
     </footer>
+    <script src="./assets/js/locomotive-scroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./assets/js/main.js"></script>
 </body>

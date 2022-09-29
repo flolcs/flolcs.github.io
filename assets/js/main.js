@@ -35,7 +35,14 @@ music.addEventListener("click", () => {
 // TYPED JS
 const typedh2 = new Typed("h2", {
   strings: ["Développeur web", "Développeur front-end"],
-  typeSpeed: 30,
-  backSpeed: 30,
+  typeSpeed: 40,
+  backSpeed: 40,
+  startDelay: 500,
   smartBackspace: true,
+});
+
+// LOCOMOTIVE SCROLL
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("[data-scroll-container]"),
+  smooth: true,
 });
