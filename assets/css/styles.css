@@ -228,11 +228,11 @@ main {
 h3 {
   font-family: "font-1";
   font-size: 26px;
-  color: var(--color6)
+  color: var(--color3)
 }
 
 b {
-  color: var(--color6);
+  color: var(--color3);
 }
 
 .main-aboutme {
@@ -241,7 +241,7 @@ b {
 
 /*=============== SKILLS ===============*/
 #skills h3:nth-child(1) {
-  color: var(--color1)
+  color: var(--color6)
 }
 
 #skills {
@@ -278,23 +278,23 @@ b {
 .soft-skill {
   font-family: "font-4";
   letter-spacing: 3px;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .soft-skills span:nth-child(2) {
-  color: var(--color3);
-}
-.soft-skills span:nth-child(3) {
-  color: var(--color4);
-}
-.soft-skills span:nth-child(4) {
-  color: var(--color1);
-}
-.soft-skills span:nth-child(5) {
   color: var(--color6);
 }
+.soft-skills span:nth-child(3) {
+  color: var(--color1);
+}
+.soft-skills span:nth-child(4) {
+  color: var(--color6);
+}
+.soft-skills span:nth-child(5) {
+  color: var(--color1);
+}
 .soft-skills span:nth-child(6) {
-  color: var(--color5);
+  color: var(--color6);
 }
 
 /*=============== PORTFOLIO ===============*/
@@ -320,6 +320,7 @@ b {
   height: 100%;
   width: 100%;
   border-radius: 10px;
+  filter: grayscale(75%);
 }
 
 .swiper-slide:hover .img-portfolio {
@@ -341,7 +342,7 @@ b {
   transform: translateX(-50%);
   font-size: 24px;
   font-family: "font-1";
-  color: var(--color1);
+  color: var(--color4);
   visibility: hidden;
 }
 
@@ -407,18 +408,102 @@ b {
   }
 }
 
-
-
-
-
-
+/*=============== CONTACT ===============*/
 #contact {
-  height: 100vh;
+  margin-top: 100px;
 }
 
+#contact h3:nth-child(1) {
+  color: var(--color5);
+}
 
+.img-contact {
+  height: 50px;
+  width: 50px;
+}
+
+h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "font-2";
+}
+
+#contact b:nth-child(1) {
+  color: var(--color5);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  height: 400px;
+}
+
+.input-form-contact {
+  height: 40px;
+  width: 80%;
+  max-width: 400px;
+  background-color: var(--color1);
+  border: none;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: var(--color2);
+  font-family: "font-3";
+}
+
+::placeholder {
+  color: var(--color2);
+  font-family: "font-3";
+  font-size: 12px;
+}
+
+#text-message {
+  height: 100px;
+  resize: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#submit {
+  border: none;
+  background-color: var(--color5);
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  color: var(--color1);
+  font-family: "font-1";
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 10;
+}
+
+.link-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
 
 /*=============== FOOTER ===============*/
+footer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-footer {
+  font-size: 12px;
+  font-family: "font-2";
+  color: var(--color1);
+}
 
 /*=============== RESPONSIVE ===============*/
 @media (min-width: 768px) {
@@ -482,10 +567,13 @@ b {
     height: 70px;
   }
   .soft-skill {
-    font-size: 26px;
+    font-size: 24px;
   }
   h3 {
     font-size: 32px;
+  }
+  .text-footer {
+    font-size: 14px;
   }
 }
 
@@ -517,10 +605,16 @@ b {
   p {
     font-size: 22px;
   }
+  h4 {
+    font-size: 22px;
+  }
   h3 {
     font-size: 36px;
   }
   .soft-skill {
-    font-size: 30px;
+    font-size: 28px;
+  }
+  .text-footer {
+    font-size: 16px;
   }
 }
