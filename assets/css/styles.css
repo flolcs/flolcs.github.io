@@ -183,7 +183,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  margin-top: 10vh;
+  margin-top: 50px;
 }
 
 #img-dev {
@@ -558,6 +558,9 @@ footer {
     padding-right: 10%;
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+  .main-header {
+    margin-top: 125px;
   }
   .ri-menu-line {
     display: none;
